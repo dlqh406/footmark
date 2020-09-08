@@ -137,7 +137,7 @@
 
   /* Banner */
   .first {
-    height: 40%;
+    height: 60%;
     margin-right: 30px;
   }
 
@@ -721,7 +721,7 @@
   .whitephone {
     width: 400px;
     top: 250px;
-    left: -20px;
+    left: -30px;
   }
 
   .icecream {
@@ -757,7 +757,7 @@
   .busstop {
     width: 75px;
     top: 550px;
-    left: 310px;
+    left: 290px;
   }
 
   .three_wrap {
@@ -1141,7 +1141,7 @@
 #seven .seven-text {
   height: 600px;
   padding-top: 20%;
-  margin-right: 20%;
+  margin-left: 20%;
 }
 
 .seven-badge-place {
@@ -1175,11 +1175,11 @@
     width: 100%;
     margin-top: 50px;
     right: 0%;
-    left: 5%;
+    left: 0%;
   }
 
   #seven .seven-text {
-    margin-right: 10%;
+    margin-left: 10%;
     text-align: center;
   }
 
