@@ -1,0 +1,378 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+	<title>지도가 재미있다! 위치기반 SNS 발자국</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta property="og:url" content="https://final2-bal.firebaseapp.com/" />
+	<meta property="og:type" content="website" />
+	<meta property="og:image" content="./assets/logo.png" />
+	<meta property="og:title" content="발자국" />
+	<meta property="og:title" content="장소경험 SNS 어플리케이션" />
+
+	<link rel="stylesheet" href="./assets/css/main.css" />
+	<link rel="stylesheet" href="./assets/css/index.css" />
+	<link rel=" shortcut icon" href="./assets/logo.ico">
+	<link rel="icon" href="./assets/logo.ico">
+
+	<style media="screen">
+		html,
+		body {
+			height: 100%;
+			width: 100%;
+		}
+	</style>
+
+</head>
+
+<body style="font-family: 'Roboto'">
+
+	<!-- Banner -->
+	<section class="wrapper style2 first" style="padding:0;">
+		<video loop autoplay muted id="video">
+			<source
+				src="https://firebasestorage.googleapis.com/v0/b/final2-bal.appspot.com/o/page1%2Ffirstvideo.mp4?alt=media&token=be855a90-4574-467a-b64a-0544b53b6676"
+				type="video/mp4" />
+		</video>
+		<div class="menu_right" style="position:absolute;  top: 8%; right:8%;">
+			<!-- <h2
+				style="display:inline-block; margin-right:30px; color:#fff; font-family: 'Roboto'; font-weight: 400; text-shadow: 2px 2px 2px gray;">
+				<a href="./" style="color:#fff;">소개</a></h2>
+			<h2
+				style="display:inline-block; color:#fff; font-family: 'Roboto'; font-weight: 400; text-shadow: 2px 2px 2px gray;">
+				<a href="https://forms.gle/3swnct3YrQhfCBf26" style="color:#fff;">문의</a></h2> -->
+		</div>
+		<div class="banner-flex">
+			<div class="logo-text overlay">
+				<header class="alt" style="position:relative;">
+					<!-- <h2
+						style="color:#fff; font-family: 'Roboto'; font-weight: 400; text-shadow: 2px 2px 2px gray;">
+						9월 출시 예정</h2> -->
+				</header>
+				<div class="first-left">
+					<!-- <img class="app_icon"
+						src="https://firebasestorage.googleapis.com/v0/b/final2-bal.appspot.com/o/page1%2Fg-eins_public_assets_images_page1_app_icon.png?alt=media&token=d19aeadf-054f-48ba-b961-03bcc39a9292"
+						alt="앱 아이콘 일러스트"> -->
+					<h3 class="company_mobile"
+						style="color:#fff; font-family: 'Binggrae'; font-weight:600; text-shadow: 2px 2px 2px gray;">발자국
+					</h3>
+					<img class="app_icon_mobile"
+						src="https://firebasestorage.googleapis.com/v0/b/final2-bal.appspot.com/o/page1%2F200904_%E1%84%87%E1%85%A1%E1%86%AF%E1%84%8C%E1%85%A1%E1%84%80%E1%85%AE%E1%86%A8_public_assets_mobile_logo.png?alt=media&token=456c75bd-7e27-456c-919a-94d3887a765d"
+						alt="앱 아이콘 일러스트">
+				</div>
+				<div class="first-banner">
+					<h3 class="memo memo-block"
+						style="font-family: 'Roboto'; margin-bottom: 0; font-weight: 400; color:#fff; text-shadow: 2px 2px 2px gray;">
+						온라인 세상을 바꾸는 당신의 한걸음
+					</h3>
+					<h3 class="memo"
+						style="font-family: 'Roboto'; font-weight: 400; color:#fff; text-shadow: 2px 2px 2px gray;">
+						장소경험 SNS 어플리케이션
+					</h3>
+					<!-- <h3 class="company"
+						style="color:#fff; font-family: 'Binggrae'; font-weight:600; text-shadow: 2px 2px 2px gray;">발자국
+					</h3> -->
+				</div>
+				<div class="badge-place">
+					<a href="https://forms.gle/3swnct3YrQhfCBf26">
+						<img src="https://firebasestorage.googleapis.com/v0/b/final2-bal.appspot.com/o/page1%2FGoogleplaystore%20LOGO.png?alt=media&token=74aaf91a-bfc0-45c6-9648-2d89dcb7ee3f"
+							alt="구글 플레이스토어 배지" style="width: 150px;">
+					</a>
+					<!-- style="width:150px;" -->
+					<a href="https://forms.gle/3swnct3YrQhfCBf26">
+						<img src="https://firebasestorage.googleapis.com/v0/b/final2-bal.appspot.com/o/page1%2FApplestore%20LOGO.png?alt=media&token=171fd46b-73dd-476c-819f-35f420425480"
+							alt="애플 스토어 배지" style="width: 150px;">
+					</a>
+				</div>
+	</section>
+
+	<section id="zero" class="wrapper style2">
+		<div class="zero-flex-container">
+			<div class="zero-text">
+				<br>
+				<img id="feet_shake"
+					src="https://firebasestorage.googleapis.com/v0/b/final2-bal.appspot.com/o/page3%2Flogo02.svg?alt=media&token=1340a3a4-9b59-4b5e-bf50-b6e08a721638"
+					alt="" style="width:70px;">
+				<h2 style="font-weight:600; margin-bottom: 0;">갤러리 사진과 영상의</h2>
+				<h2 style="font-weight:600; margin-bottom: 0;">위치가 지도위로 <span
+						style="color:#0B4D9B; font-family: 'Binggrae'; font-weight:600; text-shadow: 1px 1px 1px gray;">'발자국'</span>
+				</h2><br><br>
+				<p style="font-weight:600; color:#000;">사진을 보며 '여기가 어디였지?' 할 땐<br>
+					발자국을 열어보세요, <span>시작과 동시에 미디어 위치 확인!</span></p>
+				<br><br><br><br>
+			</div>
+			<div class="zero-img">
+				<img class="smallfeet smallfeet1"
+					src="https://firebasestorage.googleapis.com/v0/b/final2-bal.appspot.com/o/page3%2Flogo02.svg?alt=media&token=1340a3a4-9b59-4b5e-bf50-b6e08a721638"
+					alt="" style="width:30px;">
+				<img class="smallfeet smallfeet2"
+					src="https://firebasestorage.googleapis.com/v0/b/final2-bal.appspot.com/o/page3%2Flogo02.svg?alt=media&token=1340a3a4-9b59-4b5e-bf50-b6e08a721638"
+					alt="" style="width:30px;">
+				<img class="smallfeet smallfeet3"
+					src="https://firebasestorage.googleapis.com/v0/b/final2-bal.appspot.com/o/page3%2Flogo02.svg?alt=media&token=1340a3a4-9b59-4b5e-bf50-b6e08a721638"
+					alt="" style="width:30px;">
+				<img class="smallfeet smallfeet4"
+					src="https://firebasestorage.googleapis.com/v0/b/final2-bal.appspot.com/o/page3%2Flogo02.svg?alt=media&token=1340a3a4-9b59-4b5e-bf50-b6e08a721638"
+					alt="" style="width:30px;">
+				<img class="feetcheck"
+					src="https://firebasestorage.googleapis.com/v0/b/final2-bal.appspot.com/o/page3%2Ffeetcheck.png?alt=media&token=6ee3014d-9eba-4f5d-9139-ca37e4fa8284"
+					alt="">
+				<img class="location_phone"
+					src="https://firebasestorage.googleapis.com/v0/b/final2-bal.appspot.com/o/page3%2F1004.png?alt=media&token=948de528-775d-4850-b32a-d783a395c50d"
+					alt="">
+				<img class="feed_detail"
+					src="https://firebasestorage.googleapis.com/v0/b/final2-bal.appspot.com/o/page3%2Fwow.png?alt=media&token=b49eb149-945f-44e7-af81-dfac6392ac19"
+					alt="">
+			</div>
+	</section>
+
+	<!-- One -->
+	<section id="one" class="wrapper style2" style="padding:0;">
+		<div class="one-flex">
+			<div class="info">
+				<img src="https://firebasestorage.googleapis.com/v0/b/final2-bal.appspot.com/o/page2%2FmappingUI.svg?alt=media&token=6a6ef853-b2da-49bb-8030-02dc836c3fc5"
+					alt="">
+				<div><br>
+					<h2 style="font-weight:600; margin-bottom:0;">내 손안의 다이어리 지도</h2>
+					<h2
+						style="margin-bottom:0; color:#0B4D9B; font-family: 'Binggrae'; font-weight:600; text-shadow: 1px 1px 1px gray;">
+						'내바닥'</h2><br><br>
+					<p style="font-weight:600; color:#000;">친구를 만나기 위해<br>
+						멋진곳을 가기 위해<br>
+						맛있는걸 먹기 위해<br><br>
+						찾아간 그 장소에서<br>
+						나의 이야기를 지도위에 기록하세요</p>
+					<br><br><br><br>
+				</div>
+			</div>
+			<div class="first-img">
+				<img class="fix"
+					src="https://firebasestorage.googleapis.com/v0/b/final2-bal.appspot.com/o/page2%2Fgalnot10.png?alt=media&token=cb6cd408-c29a-44de-92dc-7e17445d1033"
+					loop="once">
+				<img class="slide1"
+					src="https://firebasestorage.googleapis.com/v0/b/final2-bal.appspot.com/o/page2%2Fgal10_slide1.png?alt=media&token=c068a7b3-ea70-4716-8c4d-120f729da96e"
+					alt="">
+				<img class="slide2"
+					src="https://firebasestorage.googleapis.com/v0/b/final2-bal.appspot.com/o/page2%2Fgal10_slide2.png?alt=media&token=50fa2234-f4f7-4b58-a3bf-4f5cd0750c56"
+					alt="">
+			</div>
+		</div>
+	</section>
+
+	<section id="three" class="wrapper style2" style="padding:0;">
+		<div class="tree_wrap" style="width:100%;">
+			<div class="three_img">
+				<img class="icecream"
+					src="https://firebasestorage.googleapis.com/v0/b/final2-bal.appspot.com/o/page4%2Ficecream.png?alt=media&token=4afd384f-30c1-4013-af3e-11a8055b488b"
+					alt="아이스크림">
+				<img class="soju"
+					src="https://firebasestorage.googleapis.com/v0/b/final2-bal.appspot.com/o/page4%2Fsoju.png?alt=media&token=04429428-4db0-495d-a7da-81b64bfd79c9"
+					alt="소주">
+				<img class="chicken"
+					src="https://firebasestorage.googleapis.com/v0/b/final2-bal.appspot.com/o/page4%2Fchicken.png?alt=media&token=f9671b46-94c3-45b2-8ebf-44ea0ca53607"
+					alt="치킨">
+				<img class="muffine"
+					src="https://firebasestorage.googleapis.com/v0/b/final2-bal.appspot.com/o/page4%2Fmuffine.png?alt=media&token=d5d5239a-37d3-41f2-b66b-96415963a434"
+					alt="머핀">
+				<img class="football"
+					src="https://firebasestorage.googleapis.com/v0/b/final2-bal.appspot.com/o/page4%2Ffootball.png?alt=media&token=bb7eef27-8190-42f7-ad53-f4c3986c593d"
+					alt="축구공">
+				<img class="busstop"
+					src="https://firebasestorage.googleapis.com/v0/b/final2-bal.appspot.com/o/page4%2Fbusstop.png?alt=media&token=829679c9-b196-4640-a32c-e06dae0622d8"
+					alt="버스스탑">
+				<img class="whitephone"
+					src="https://firebasestorage.googleapis.com/v0/b/final2-bal.appspot.com/o/page4%2F123.png?alt=media&token=931f2acd-dbf8-47bb-8d21-4815c821fe72"
+					alt="화이트폰 내바닥 목업" width="100%;">
+			</div>
+			<div class="info_three">
+				<img id="heart"
+					src="https://firebasestorage.googleapis.com/v0/b/final2-bal.appspot.com/o/page4%2Fheart.png?alt=media&token=1274a47b-c0aa-456d-a1c5-1b72413d4213"
+					alt="하트" style="display:inline-block; padding-right: 10px;">
+				<h2 style="color:#5885D4; font-weight: 600; display:inline-block; margin-bottom:0;">
+					취.향.저.격
+				</h2>
+				<h3 style="color:#000; font-weight: 600; display:inline-block; margin-bottom:0;">
+					스티커로
+				</h3><br>
+				<h3 style="color:#000; font-weight: 600; display:inline-block; margin-bottom:0;">
+					나만의 지도 꾸미기
+				</h3><br><br>
+				<p style="color:#000; font-weight: 600;">
+					장소를 대표할 아이콘으로 지도를<br>
+					이쁘게 꾸며보세요!
+				</p>
+				<br><br>
+			</div>
+		</div>
+	</section>
+
+	<section id="five" class="wrapper style2" style="padding:0;">
+		<div class="five-text" style="text-align:center;">
+			<h2 style="font-weight:600;"><span>위치기반 오픈 커뮤니티의 시작!</span> <span class="five-title"
+					style="color:#0B4D9B; font-family: 'Binggrae'; text-shadow: 1px 1px 1px gray;">'우리바닥'</span></h2>
+			<h3 style="color:#000; font-weight:600;">같은 지역주민, 나와 같은 취미, <span>관심사를 가진 사람들과 함께 하세요</span></h3>
+		</div>
+		<div id="five_flex" class="five-flex-container" style="margin:0 auto;">
+			<div class="five-side">
+				<div class="feed-wrap">
+					<img id="five1"
+						src="https://firebasestorage.googleapis.com/v0/b/final2-bal.appspot.com/o/page5%2Ffeed1.png?alt=media&token=ec7eb490-d0db-48cf-8a53-2e2014831a49"
+						alt="">
+				</div>
+				<div class="feed-wrap" style="margin-top:100px;">
+					<img id="five2"
+						src="https://firebasestorage.googleapis.com/v0/b/final2-bal.appspot.com/o/page5%2Ffeed2.png?alt=media&token=0e35379d-ab99-433f-b4e0-7e18f6de6358"
+						alt="">
+				</div>
+			</div>
+			<div class="center-phone">
+				<img class="blackphone"
+					src="https://firebasestorage.googleapis.com/v0/b/final2-bal.appspot.com/o/page5%2F1.png?alt=media&token=15aca5c9-ca3d-497d-a4a3-e28ce5bb16bb"
+					alt="" style="width:400px;">
+			</div>
+			<div class="five-side">
+				<div class="feed-wrap">
+					<img id="five3"
+						src="https://firebasestorage.googleapis.com/v0/b/final2-bal.appspot.com/o/page5%2Ffeed3.png?alt=media&token=6fef36ff-e681-458b-87bb-4e07fa2d0db8"
+						alt="">
+				</div>
+				<div class="feed-wrap" style="margin-top:100px;">
+					<img id="five4"
+						src="https://firebasestorage.googleapis.com/v0/b/final2-bal.appspot.com/o/page5%2Ffeed4.png?alt=media&token=674a0b60-e67d-43fc-9f59-bb111ca2f54d"
+						alt="">
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="six" class="wrapper style2" style="padding: 0; background-color:#F0FAFF">
+		<div class="flex-container" style="">
+			<div class="six-img" style="position: relative;">
+				<img class="six-full-img"
+					src="https://firebasestorage.googleapis.com/v0/b/final2-bal.appspot.com/o/page6%2Fconvert.png?alt=media&token=a0e9a047-dd65-4d60-b530-c9b20e03a718"
+					alt="" style="width:100%;">
+			</div>
+			<div class="six-info">
+				<img id="feet" class="feet-img"
+					src="https://firebasestorage.googleapis.com/v0/b/final2-bal.appspot.com/o/page6%2F159.png?alt=media&token=8ca09f72-6a21-465d-bcd4-bcd9f68d8633"
+					alt="">
+				<div class="six-info-text">
+					<h1 style="font-weight:600;">
+						나를 더 재미있게 표현하는 법<br>
+						내 프로필을 빛낼 <span
+							style="color:#0B4D9B; font-family: 'Binggrae'; text-shadow: 1px 1px 1px gray;">'스탬프'</span>
+					</h1><br>
+					<h4 style="color:#000; font-weight:600;">
+						주어진 미션을 성공하면 획득할 수 있는 <span>프로필 강화 스탬프!</span><br>
+						다양한 지역 미션, 행동 미션에 참여하고<br> <span>스탬프 보상을 획득하세요</span>
+					</h4>
+					<br>
+				</div>
+			</div>
+			<div class="">
+
+			</div>
+		</div>
+	</section>
+
+	<section id="seven" class="wrapper style2">
+		<div class="seven-right-wrap">
+			<div class="seven-text">
+				<h2 style="font-weight:600;">
+					내가 닿는 소중한 발걸음<br>
+					당신의 첫 발자국을 시작하세요
+				</h2>
+				<div class="seven-badge-place">
+					<a href="https://forms.gle/3swnct3YrQhfCBf26">
+						<img src="https://firebasestorage.googleapis.com/v0/b/final2-bal.appspot.com/o/page1%2FGoogleplaystore%20LOGO.png?alt=media&token=74aaf91a-bfc0-45c6-9648-2d89dcb7ee3f"
+							alt="구글 플레이스토어 배지" style="width: 150px;">
+					</a>
+					<!-- style="width:150px;" -->
+					<a href="https://forms.gle/3swnct3YrQhfCBf26">
+						<img src="https://firebasestorage.googleapis.com/v0/b/final2-bal.appspot.com/o/page1%2FApplestore%20LOGO.png?alt=media&token=171fd46b-73dd-476c-819f-35f420425480"
+							alt="애플 스토어 배지" style="width: 150px;">
+					</a>
+
+
+				</div>
+			</div>
+		</div>
+		<img class="opening"
+			src="https://firebasestorage.googleapis.com/v0/b/final2-bal.appspot.com/o/lastpage%2Fcom3.gif?alt=media&token=b4c486a8-5fd0-40e4-b0e8-43d225b5850e"
+			alt="">
+	</section>
+
+	<!-- Footer -->
+	<footer id="footer" style="background-color:#f2f2f2; padding-top:0px;">
+		<div class="container" style="padding-top:20px;">
+			<div class="">
+				<ul class="icons" style="color:#000; margin:0;">
+					<li><a href="https://www.facebook.com/balzagook "><img
+								src="https://firebasestorage.googleapis.com/v0/b/final2-bal.appspot.com/o/lastpage%2Ffacebook.png?alt=media&token=5243e707-06cb-4357-867b-3b7b8797a4f4"
+								style="width:30px; margin:10px;"></a></li>
+					<li><a href="https://www.instagram.com/balzagook_official"><img
+								src="https://firebasestorage.googleapis.com/v0/b/final2-bal.appspot.com/o/lastpage%2Finstagram0.png?alt=media&token=de258619-2897-4200-aab0-ee6b4ae00c8a"
+								style="width:30px; margin:10px"></a></li>
+					<li><a href="https://pf.kakao.com/_gAgxcxb"><img
+								src="https://firebasestorage.googleapis.com/v0/b/final2-bal.appspot.com/o/lastpage%2Fkakaotalk.png?alt=media&token=ce7e0f6b-7d56-4769-b560-975fcdfd0474"
+								style="width:30px; margin:10px;"></a></li>
+				</ul>
+				<div style="color:#000;">
+					<p class="to_block" style="font-weight:300">
+						(주)지아인스 | 공동대표: 이동현, 임동이
+						<span class="footer-info">| 소재지: 서울특별시 노원구</span>
+						<span class="footer-info">초안산로 12 월계동,</span>
+						<span class="footer-info">인덕대학교 연지스퀘어 로비층 009호</span>
+					</p>
+					<div class="info-block">
+					</div>
+					<p>
+						<span class="footer-info">사업자등록번호: 269-81-01489 </span>
+						<span class="footer-info">| 이메일: info@g-eins.com </span>
+						<span class="footer-info">| 대표전화: 070-5015-1123</span>
+					</p>
+					<div style="color:#000;">
+						<span style="margin-left:1px; font-size: 13px;">이용약관</span>
+						<span style="margin-left:10px; font-size: 13px;">개인정보취급방침</span>
+						<span style="margin-left:10px; font-size: 13px;">위치기반서비스이용약관</span>
+					</div>
+				</div>
+			</div>
+			<br>
+
+			<!-- 협력업체 로고
+			인덕대 : https://firebasestorage.googleapis.com/v0/b/g-eins-b1251.appspot.com/o/footer%2F%E1%84%8B%E1%85%B5%E1%86%AB%E1%84%83%E1%85%A5%E1%86%A8%E1%84%83%E1%85%A2.png?alt=media&token=97cfd344-2c00-40f9-b57a-f52100a9f9a9
+			서울 https://firebasestorage.googleapis.com/v0/b/g-eins-b1251.appspot.com/o/footer%2Fseoul.png?alt=media&token=b70e0d13-372d-473f-93ef-96172c940791
+			관광재단 : https://firebasestorage.googleapis.com/v0/b/g-eins-b1251.appspot.com/o/footer%2F%E1%84%80%E1%85%AA%E1%86%AB%E1%84%80%E1%85%AA%E1%86%BC%E1%84%8C%E1%85%A2%E1%84%83%E1%85%A1%E1%86%AB0.png?alt=media&token=43e380c2-d5bc-4d74-ba5a-943b6e2c155d
+			 -->
+			<img class="as_links" src="https://firebasestorage.googleapis.com/v0/b/final2-bal.appspot.com/o/lastpage%2F%E1%84%8B%E1%85%B5%E1%86%AB%E1%84%83%E1%85%A5%E1%86%A8%E1%84%83%E1%85%A2.png?alt=media&token=5487bf8a-c5ff-46f7-82af-9a92ecd58fea"
+				alt="">
+			<img class="as_links" src="https://firebasestorage.googleapis.com/v0/b/final2-bal.appspot.com/o/lastpage%2Fseoul.png?alt=media&token=adf9d248-f421-463e-8b5d-4a4e21f5eb72"
+				alt="">
+			<img class="as_links" src="https://firebasestorage.googleapis.com/v0/b/final2-bal.appspot.com/o/lastpage%2F%E1%84%80%E1%85%AA%E1%86%AB%E1%84%80%E1%85%AA%E1%86%BC%E1%84%8C%E1%85%A2%E1%84%83%E1%85%A1%E1%86%AB0.png?alt=media&token=f3a999ed-c71e-4c4d-9eee-87a0991f38b1"
+				alt="" style="margin-right:0;">
+
+			<div class="copyright" style="color:#000;">
+				Copyright &copy; 2020-G-Eins Co.LTD All. rights reserved.
+			</div>
+		</div>
+	</footer>
+
+	<!-- Scripts -->
+	<script defer src="https://www.gstatic.com/firebasejs/6.2.0/firebase-app.js"></script>
+	<script defer src="./assets/js/init.js"></script>
+	<!-- <script>
+		var storage = firebase.storage("gs://g-eins-b1251.appspot.com/firstvideo.mp4");
+		var storageRef = storage.ref();
+		var imagesRef = storageRef.child('images');
+	</script> -->
+
+
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/jquery.scrollex.min.js"></script>
+	<script defer src="./assets/js/fadein.js"></script>
+
+</body>
+
+</html>
