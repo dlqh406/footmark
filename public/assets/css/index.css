@@ -9,6 +9,10 @@
   height: 100%;
 }
 
+a {
+  text-decoration: none;
+}
+
 #seven {
   height: 60%;
 }
@@ -27,7 +31,7 @@
 
 /* Banner */
 .first {
-  width:100%;
+  width: 100%;
   overflow: hidden;
 }
 
@@ -156,10 +160,12 @@
 
   .menu_right {
     display: none;
+
   }
 
   .badge-place {
     float: none;
+    text-decoration: none;
   }
 
   .logo-text {
@@ -1270,11 +1276,11 @@
   height: 0;
 }
 
-#footer .as_links{
+#footer .as_links {
   display: inline-block;
-  width:100px;
-  margin-right:30px;
-  margin-bottom:20px;
+  width: 100px;
+  margin-right: 30px;
+  margin-bottom: 20px;
 }
 
 @media all and (max-width:768px) {
@@ -1293,10 +1299,11 @@
   #footer .copyright {
     text-align: center;
   }
-  #footer .as_links{
+
+  #footer .as_links {
     display: inline-block;
-    width:70px;
-    margin-right:30px;
-    margin-bottom:10px;
+    width: 70px;
+    margin-right: 30px;
+    margin-bottom: 10px;
   }
 }
