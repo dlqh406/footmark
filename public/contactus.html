@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Student Complaint Form</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+      integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+      crossorigin="anonymous"
+    />
+    <style>
+      html,
+      body {
+        min-height: 100%;
+      }
+      body,
+      div,
+      form,
+      input,
+      select,
+      p {
+        padding: 0;
+        margin: 0;
+        outline: none;
+        font-family: Roboto, Arial, sans-serif;
+        font-size: 14px;
+        color: #666;
+        line-height: 22px;
+      }
+      h1 {
+        margin: 15px 0;
+        font-weight: 400;
+      }
+      .testbox {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: inherit;
+        padding: 3px;
+      }
+      form {
+        width: 100%;
+        padding: 20px;
+        background: #fff;
+        box-shadow: 0 2px 5px #ccc;
+      }
+      input,
+      select,
+      textarea {
+        margin-bottom: 10px;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+      }
+      input {
+        width: calc(100% - 10px);
+        padding: 5px;
+      }
+      select {
+        width: 100%;
+        padding: 7px 0;
+        background: transparent;
+      }
+      textarea {
+        width: calc(100% - 6px);
+      }
+      .item {
+        position: relative;
+        margin: 10px 0;
+      }
+      .item:hover p,
+      .item:hover i {
+        color: #095484;
+      }
+      input:hover,
+      select:hover,
+      textarea:hover,
+      .preferred-metod label:hover input {
+        box-shadow: 0 0 5px 0 #095484;
+      }
+      .preferred-metod label {
+        display: block;
+        margin: 5px 0;
+      }
+      .preferred-metod:hover input {
+        box-shadow: none;
+      }
+      .preferred-metod-item input,
+      .preferred-metod-item span {
+        width: auto;
+        vertical-align: middle;
+      }
+      .preferred-metod-item input {
+        margin: 0 5px 0 0;
+      }
+      input[type="date"]::-webkit-inner-spin-button {
+        display: none;
+      }
+      .item i,
+      input[type="date"]::-webkit-calendar-picker-indicator {
+        position: absolute;
+        font-size: 20px;
+        color: #a9a9a9;
+      }
+      .item i {
+        right: 1%;
+        top: 30px;
+        z-index: 1;
+      }
+      [type="date"]::-webkit-calendar-picker-indicator {
+        right: 0;
+        z-index: 2;
+        opacity: 0;
+        cursor: pointer;
+      }
+      .btn-block {
+        margin-top: 20px;
+        text-align: center;
+      }
+      button {
+        width: 150px;
+        padding: 10px;
+        border: none;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        border-radius: 5px;
+        background-color: #095484;
+        font-size: 16px;
+        color: #fff;
+        cursor: pointer;
+      }
+      button:hover {
+        background-color: #0666a3;
+      }
+      @media (min-width: 568px) {
+        .name-item,
+        .city-item {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-between;
+        }
+        .name-item input,
+        .city-item input {
+          width: calc(50% - 20px);
+        }
+        .city-item select {
+          width: calc(50% - 8px);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div
+      style="
+        padding-top: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #d3dce9;
+      "
+    >
+      <img
+        src="https://firebasestorage.googleapis.com/v0/b/balzagook-web-2caec.appspot.com/o/page1%2F200904_%E1%84%87%E1%85%A1%E1%86%AF%E1%84%8C%E1%85%A1%E1%84%80%E1%85%AE%E1%86%A8_public_assets_mobile_logo.png?alt=media&token=8d39acb8-bef2-4902-ae21-42649d9119c0"
+        alt=""
+        style="width: 200px"
+      />
+    </div>
+    <div
+      style="
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-top: 20px;
+        padding-bottom: 60px;
+        background-color: #d3dce9;
+      "
+    >
+      <div class="testbox" style="max-width: 630px; border-top: #0666a3">
+        <form
+          class="gform"
+          method="POST"
+          data-email="home@g-eins.com"
+          action="https://script.google.com/macros/s/AKfycbzdeDPEh6a1J-T2517QGBvMxLdr8TUD7-E-buKpcQ/exec"
+        >
+          <div style="align-items: center; justify-content: center">
+            <h1>장소경험 SNS '발자국' 사전 예약 설문</h1>
+            <br />
+            사전 설문에 참여해주셔서 감사합니다 :) <br /><br />
+            온라인 세상을 바꾸기 위하여 여러분들의 발자국을 하나씩 모으고자
+            하는<br />
+            장소경험 SNS '발자국'은 곧 출시를 앞두고 있어요. <br /><br />
+            아래의 설문내용에 응답주시면<br />
+            어플리케이션 출시 소식을 회원님들에게 누구보다 빨리 알려드릴수
+            있답니다 :D <br />
+            <br />
+            설문 참여에 다시 한번 감사드리며,<br />
+            회원님들과 함께 한걸음 한걸음씩 나아가는 발자국 되도록
+            노력하겠습니다!<br /><br />
+            당신이 한걸음을 내딛을 때<br />
+            세상이 한걸음 달라질 수 있습니다. <br /><br />
+            당신의 발자국,<br />
+            지금 시작합니다.<br /><br /><br />
+            <p style="color: red">* 필수작성항목</p>
+            <br />
+          </div>
+          <div class="item">
+            <span style="font-weight: 900"> 전화번호</span>
+            <span style="color: red">*</span>
+            <br />
+            "-" 을 제외한 숫자만 입력해주세요(필수)
+            <div class="item">
+              <input type="text" name="number" placeholder="" />
+            </div>
+          </div>
+          <div class="item">
+            <p style="font-weight: 900">이메일</p>
+            이메일 주소를 입력해 주세요(선택)
+            <input type="text" name="email" />
+          </div>
+          <div class="item">
+            <p style="font-weight: 900">성함</p>
+            회원님의 성함을 입력해 주세요(선택)
+            <input type="text" name="name" />
+          </div>
+          <div class="item">
+            <p style="font-weight: 900">기타 의견</p>
+            기타 발자국에 남기고 싶은 의견을 적어주세요(선택) "회원님들의 소중한
+            의견은 발자국에 큰 힘이 됩니다!"
+            <input type="text" name="optinon" placeholder="" />
+          </div>
+
+          <div class="btn-block">
+            <button type="submit" onclick="clickon()" href="/">SEND</button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <script src="https://www.gstatic.com/firebasejs/7.20.0/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/7.20.0/firebase-analytics.js"></script>
+
+    <script>
+      // Your web app's Firebase configuration
+      // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+      var firebaseConfig = {
+        apiKey: "AIzaSyCH0xpgZ5tvQGiHH8PrwwzFTsQXjBs_ue8",
+        authDomain: "balzagook-web-2caec.firebaseapp.com",
+        databaseURL: "https://balzagook-web-2caec.firebaseio.com",
+        projectId: "balzagook-web-2caec",
+        storageBucket: "balzagook-web-2caec.appspot.com",
+        messagingSenderId: "712667055249",
+        appId: "1:712667055249:web:236dd552644ece24ad2b30",
+        measurementId: "G-YYP4FYHSF9",
+      };
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+      firebase.analytics();
+    </script>
+    <script>
+      function clickon() {
+        alert("전송이 완료되었습니다!");
+        window.open("./");
+      }
+    </script>
+    <script
+      data-cfasync="false"
+      type="text/javascript"
+      src="https://cdn.rawgit.com/dwyl/html-form-send-email-via-google-script-without-server/master/form-submission-handler.js"
+    ></script>
+  </body>
+</html>
