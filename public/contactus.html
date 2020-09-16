@@ -1,7 +1,13 @@
 <!DOCTYPE html>
-<html>
+<html style="background-color: #d3dce9">
   <head>
-    <title>Student Complaint Form</title>
+    <title>지도가 재미있다! 위치기반 SNS 발자국</title>
+    <meta
+      property="og:image"
+      content="https://firebasestorage.googleapis.com/v0/b/balzagook-web-2caec.appspot.com/o/etc%2F%E1%84%8B%E1%85%A1%E1%84%8B%E1%85%B5%E1%84%91%E1%85%A9%E1%86%AB%E1%84%89%E1%85%A1%E1%84%89%E1%85%A5%E1%86%AB_%E1%84%80%E1%85%A9%E1%86%BC%E1%84%8B%E1%85%B2%E1%84%8B%E1%85%B5%E1%84%86%E1%85%B5%E1%84%8C%E1%85%B5%20800x600.png?alt=media&token=aac68822-db06-415a-a59c-4e3e3788e737"
+    />
+    <link rel="icon" href="./assets/logo.ico" />
+
     <link
       href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700"
       rel="stylesheet"
@@ -178,12 +184,14 @@
         background-color: #d3dce9;
       "
     >
-      <div class="testbox" style="max-width: 630px; border-top: #0666a3">
+      <div class="testbox" style="max-width: 630px; min-width: 800px">
         <form
           class="gform"
           method="POST"
           data-email="home@g-eins.com"
-          action="https://script.google.com/macros/s/AKfycbzdeDPEh6a1J-T2517QGBvMxLdr8TUD7-E-buKpcQ/exec"
+          action="https://script.google.com/a/g-eins.com/macros/s/AKfycbzB2TtAmlSos9AF0qKVqvFd2hKokacaOD2TMzKLQQ/exec"
+          min-width:
+          400px
         >
           <div style="align-items: center; justify-content: center">
             <h1>장소경험 SNS '발자국' 사전 예약 설문</h1>
@@ -212,28 +220,45 @@
             <br />
             "-" 을 제외한 숫자만 입력해주세요(필수)
             <div class="item">
-              <input type="text" name="number" placeholder="" />
+              <input
+                type="text"
+                name="number"
+                placeholder=""
+                style="height: 40px"
+              />
             </div>
           </div>
+          <p style="font-weight: 900">이메일</p>
+          이메일 주소를 입력해 주세요(선택)
           <div class="item">
-            <p style="font-weight: 900">이메일</p>
-            이메일 주소를 입력해 주세요(선택)
-            <input type="text" name="email" />
+            <input type="text" name="email" style="height: 40px" />
           </div>
+          <p style="font-weight: 900">성함</p>
+          회원님의 성함을 입력해 주세요(선택)
           <div class="item">
-            <p style="font-weight: 900">성함</p>
-            회원님의 성함을 입력해 주세요(선택)
-            <input type="text" name="name" />
+            <input type="text" name="name" style="height: 40px" />
           </div>
+          <p style="font-weight: 900">기타 의견</p>
+          기타 발자국에 남기고 싶은 의견을 적어주세요(선택) "회원님들의 소중한
+          의견은 발자국에 큰 힘이 됩니다!"
           <div class="item">
-            <p style="font-weight: 900">기타 의견</p>
-            기타 발자국에 남기고 싶은 의견을 적어주세요(선택) "회원님들의 소중한
-            의견은 발자국에 큰 힘이 됩니다!"
-            <input type="text" name="optinon" placeholder="" />
+            <input
+              type="text"
+              name="optinon"
+              placeholder=""
+              style="height: 40px"
+            />
           </div>
 
           <div class="btn-block">
-            <button type="submit" onclick="clickon()" href="/">SEND</button>
+            <button
+              type="submit"
+              onclick="clickon()"
+              href="/"
+              style="height: 60px; font-size: 1.7rem"
+            >
+              등록
+            </button>
           </div>
         </form>
       </div>
